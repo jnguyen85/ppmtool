@@ -32,4 +32,9 @@ public class ProjectService {
 		}
 		return this.projectRepository.findByProjectIdentifier(projectId.toUpperCase());
 	}
+	
+	public Iterable<Project> findAllProjects() {
+		
+		return this.projectRepository.findAll();
+	}
 }
